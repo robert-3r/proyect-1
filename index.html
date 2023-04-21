@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>E-commerce product page</title>
+  </head>
+  <body class="body">
+    <div class="baground__modal"></div>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="nav">
+          <div class="nav__links">
+            <i class="bi bi-list-nested btn__open"></i>
+            <h2>King-f</h2>
+            <ul class="nav__ul">
+              <i class="bi bi-x btn__close"></i>
+              <li><a href="#">Colecciones</a></li>
+              <li><a href="#">Hombre</a></li>
+              <li><a href="#">Mujer</a></li>
+              <li><a href="#">Acerca</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <!-- <div class="baground__modal"></div> -->
+          </div>
+          <div class="nav__user">
+            <div class="header__card">
+              <div class="header__card--notification">0</div>
+              <img
+                class="user_cart"
+                src="./images/icon-cart.svg"
+                alt="icon-cart"
+              />
+            </div>
+
+            <img
+              class="user__avatar"
+              src="./images/image-avatar.png"
+              alt="avatar"
+            />
+          </div>
+        </nav>
+        <div class="hero"></div>
+      </div>
+    </header>
+    <main>
+      <section class="section__hero">
+        <div class="hero__container container">
+          <article class="hero__imagenes">
+            <div class="hero__imagen">
+              <img
+                class="imagen__1 bd-rd"
+                src="./images/image-product-1.jpg"
+                alt="product 1"
+              />
+              <div class="hero__galery">
+                <button class="gallery__previus">
+                  <img src="./images/icon-previous.svg" alt="icon-previous" />
+                </button>
+                <button class="gallery__next">
+                  <img src="./images/icon-next.svg" alt="icon-next" />
+                </button>
+              </div>
+            </div>
+            <div class="hero__pruducts">
+              <img
+                id="1"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="product 2"
+              />
+              <img
+                id="2"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="product 2"
+              />
+              <img
+                id="3"
+                class="imagen__3 bd-rd"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="product 3"
+              />
+              <img
+                id="4"
+                class="imagen__4 bd-rd"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="product 4"
+              />
+            </div>
+          </article>
+          <article class="hero__description">
+            <div class="hero__texts">
+              <span class="hero_company">KING-F COMPANY</span>
+              <h1 class="hero__title">Edición limitada de otoño</h1>
+              <p class="hero__paragraph">
+                Zapatillas de deporte Estas zapatillas de deporte de perfil bajo
+                son el compañero perfecto para tu ropa casual. Con una suela
+                exterior de goma duradera, resistirán todo lo que el clima puede
+                ofrecer.
+              </p>
+              <div class="hero__price-container">
+                <div class="hero__prices">
+                  <p class="hero__price">$125.00</p>
+                  <span class="prices__discount"> 50%</span>
+                </div>
+                <span class="price__less"> $250.00</span>
+              </div>
+            </div>
+            <div class="hero__controlls">
+              <div class="controlls-cont">
+                <button class="btn-minus">
+                  <img
+                    class="hero__btn1"
+                    src="./images/icon-minus.svg"
+                    alt="icon-minus"
+                  />
+                </button>
+                <input value="0" class="hero__count" readonly />
+
+                <button class="btn-plus">
+                  <img
+                    class="hero__btn1"
+                    src="./images/icon-plus.svg"
+                    alt="icon-plus"
+                  />
+                </button>
+              </div>
+
+              <button class="hero__btn">Agrega al carrito</button>
+            </div>
+          </article>
+        </div>
+        <!-- inicio modal  -->
+        <div class="cart-modal-container">
+          <div class="cart-modal">
+            <i class="bi bi-x cart-modal__close"></i>
+            <p class="cart-modal__title">Cart</p>
+            <div class="cart-modal__checkout-container"></div>
+          </div>
+        </div>
+
+        <!-- fin modal -->
+        <!-- inicio galeria modal -->
+        <article class="modal-galery">
+          <div class="modal-galery__container">
+            <div class="modal-galery__img-">
+              <i class="bi bi-x modal-galery__close"></i>
+              <img
+                class="modal-galery__img bd-rd"
+                src="./images/image-product-1.jpg"
+                alt="product 1"
+              />
+              <div class="modal-galery__btn">
+                <button class="modal-gallery__previus">
+                  <img src="./images/icon-previous.svg" alt="icon-previous" />
+                </button>
+                <button class="modal-gallery__next">
+                  <img src="./images/icon-next.svg" alt="icon-next" />
+                </button>
+              </div>
+            </div>
+            <div class="hero__pruducts-galery">
+              <img
+                id="m1"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="product 2"
+              />
+              <img
+                id="m2"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="product 2"
+              />
+              <img
+                id="m3"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="product 3"
+              />
+              <img
+                id="m4"
+                class="imagen__2 bd-rd"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="product 4"
+              />
+            </div>
+          </div>
+        </article>
+        <!-- final galeria modal -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container__footer container">
+        <p>
+          Diseño sacado de
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.frontendmentor.io/home"
+            ><i>Frontend Mentor</i></a
+          >
+          para fines de practica.
+        </p>
+        <p>Robinson Rodriguez || Programador <i>web</i></p>
+      </div>
+    </footer>
+
+    <script src="./js/menu-hamburquesa.js"></script>
+    <script src="./js/modal-price.js"></script>
+    <script src="./js/galeria-modal.js"></script>
+    <script src="./js/contador.js"></script>
+  </body>
+</html>
